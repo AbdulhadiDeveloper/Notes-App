@@ -1,11 +1,13 @@
 // src/components/SharePopup.jsx
 import React from "react";
 import { FaWhatsapp, FaFacebook, FaTwitter, FaEnvelope } from "react-icons/fa";
+import { toast } from "react-hot-toast";
+
 
 const SharePopup = ({ url, onClose }) => {
   const copyLink = () => {
     navigator.clipboard.writeText(url);
-    alert("Link copied!");
+    toast.success("Link copied to clipboard!");
   };
 
   return (
