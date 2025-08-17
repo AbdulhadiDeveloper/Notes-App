@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 import { Share2 } from "lucide-react";
 import SharePopup from "./SharePopup.jsx"; // adjust path if needed
 
-
 const Paste = () => {
   const pastes = useSelector((state) => state.paste.pastes);
   const dispatch = useDispatch();
@@ -114,12 +113,12 @@ const Paste = () => {
                         />
                       </button>
                       {/* Share Popup */}
-  {showShare && (
-    <SharePopup
-      url={`https://yourdomain.com/pastes/${paste?._id}`}
-      onClose={() => setShowShare(false)}
-    />
-  )}
+                      {showShare && (
+                        <SharePopup
+                          url={`https://notesapp-sigma-seven.vercel.app/pastes/${paste?._id}`}
+                          onClose={() => setShowShare(false)}
+                        />
+                      )}
                     </div>
 
                     <div className="gap-x-2 flex ">
