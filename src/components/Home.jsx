@@ -56,7 +56,7 @@ const Home = () => {
 
 
   return (
-    <div className="w-full h-full py-10 max-w-[1440px] mx-auto px-5 lg:px-0">
+    <div className="w-full h-full py-10 max-w-[1200px] mx-auto px-5 lg:px-0">
       <div className="flex flex-col gap-y-5 items-start">
         <div className="w-full flex flex-row gap-x-4 justify-between items-center">
           <input
